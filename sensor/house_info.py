@@ -20,4 +20,4 @@ class HouseInfo():
 
         for record in self.data:
             if record['date'] == rec_date.strftime("%m/%d/%y"):
-                
+                pass
