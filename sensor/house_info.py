@@ -8,7 +8,7 @@ class HouseInfo():
         field_data = []
 
         for record in self.data:
-            if !rec_area:
+            if rec_area==0:
                 field_data.append(record[field])
             elif int(record['area']) == rec_area:
                 field_data.append(record[field])
@@ -20,4 +20,4 @@ class HouseInfo():
 
         for record in self.data:
             if record['date'] == rec_date.strftime("%m/%d/%y"):
-                pass
+                field_data.append(record[field])
